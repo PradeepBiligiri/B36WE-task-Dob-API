@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: cursive;
+  background-color: rgb(95, 97, 99);
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  text-shadow: 2px 2px 2px rgb(92, 89, 107);
+  color: rgb(145, 167, 187);
+}
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+}
+
+.header select {
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.slideshow {
+  flex: 1;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 5px;
+  bottom: 0px;
+  right: 200px;
+  left: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.9s ease-out;
+}
+
+img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.slide:nth-last-child(2) {
+  opacity: 1;
+  transform: scale(1.08);
+}
